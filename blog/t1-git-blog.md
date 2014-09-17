@@ -5,7 +5,7 @@ Since starting my journey to learn how to program, one thing that's been brought
 
 At first the idea of version control seemed a little trivial. I thought version control was just a simple backup file of a project's work, but in reality version control offered so much more than a backup file of my code. DBC has offered a ton of great resources on why version control is so important, and I'd like to highlight a few of the reasons that really stuck out to me...
 
-Version control allows a developer to revert to a stable version of code if a bug happens to be introduced. This is akin to an painter spilling of a bucket of paint all over their newest piece of art, and being able to "undo" that mistake and have an identical painting to the one they just spilled paint on.
+Version control allows a developer to revert to a stable version of code if a bug happens to be introduced. This is akin to an painter spilling of a bucket of paint all over their newest piece of art, and being able to "undo" that mistake and have an identical painting to the one they just spilled paint on. I really like that comparison, so get ready for a lot more impossible painter analogies!
 
 Version control allows "branching" off the master branch of code. This allows a developer to work on adding different features without destabilizing the master branch with bugs. Once the changes are made and the branch is stable, the developer can merge this version of code with the master branch. 
 
