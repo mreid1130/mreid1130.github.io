@@ -1,4 +1,5 @@
-## Version Control 101
+## Technical Blog
+#### Version Control 101
 #### 9/17/14
 
 Since starting my journey to learn how to program, one thing that's been brought up by nearly every person in the software engineering/web development industry has brought up the importance of version control.
