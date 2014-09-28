@@ -8,14 +8,6 @@
 	margin-bottom:10%;
 }
 
-.push {
-	height:4em;
-}
-
-html, body {
-	height: 100%;
-}
-
 #toolbar {
 	width:92%;
 	height:35px;
@@ -132,12 +124,11 @@ h3 {
 	color:red;
 }
 
-#contentimg {
-	margin-left:auto;
-	margin-right:auto;
-}
-
 .caption {
 	font-size: 10px;
 	font-style:italic;
+}
+
+#firstlist {
+	margin-top:-60px;
 }
