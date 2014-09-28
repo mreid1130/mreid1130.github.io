@@ -73,3 +73,20 @@ h3 {
 	float:right;
 	margin: 1px 1px 1px 1px;
 }
+
+#bloglist {
+	text-align: center;
+}
+
+#bloglist p {
+	font-weight: bold;
+}
+
+#bloglist p a:link {
+	text-decoration: none;
+	font-weight:bold;
+}
+
+#bloglist p a:hover {
+	color:black;
+}
