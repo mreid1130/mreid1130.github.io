@@ -1,26 +1,30 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>ReiDevelop - Blog</title>
+    <title>
+      ReiDevelop - Blog
+    </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
   </head>
   <body>
-    <h1>ReiDevelop - Blog</h1>
-    <h3>by Mark Reid</h3>
-    <div id="toolbar">
-      <ul>
-        <li><a href="http://mreid1130.github.io/index.html">Home</a></li>
-        <li><a href="http://mreid1130.github.io/projects.html">Projects</a></li>
-        <li><a href="http://mreid1130.github.io/blog.html">Blog</a></li>
-        <li><a href="http://mreid1130.github.io/about.html">About</a></li>
-      </ul>
+    <div class="header">
+      <h1>ReiDevelop - Blog</h1>
+      <h3>By Mark Reid</h3>
+      <div class="toolbar">
+        <div class="tbbutton"><a href="http://mreid1130.github.io/index.html">Home</a></div>
+        <div class="tbbutton"><a href="http://mreid1130.github.io/projects.html">Projects</a></div>
+        <div class="tbbutton"><a href="http://mreid1130.github.io/blog.html">Blog</a></div>
+        <div class="tbbutton"><a href="http://mreid1130.github.io/about.html">About</a></div>
+      </div>
     </div>
-    <div id="blogheader">
+    <div class="body">
+      <div class="blogheader">
         <h1>Mark's Blog</h1>
-        <h2>Inline, Blocks, and Inline-Blocks</h2>
-        <h3>9/27/14</h3>
-    </div>
-    <div id="wrapper">
-      <p id="textbody"> 
+        <h2>Version Control 101</h2>
+        <h3>9/17/14</h3>
+      </div>
+      <div class="blogtext">
+        <p> 
         I can say pretty confidently that I'm not alone in having some difficulty totally understanding the display property's functionality when first learning CSS. The goal of this blog is to both reinforce my own knowledge and help others better understand how three of the most common display values, inline, block, and inline-block, behave when applied to HTML elements.
 
         An HTML file is made up of HTML elements. Every element contains content surrounded by a start and end tag (e.g. p, h1, img, a). And every piece of content can be surrounded by 3 layers, called the padding, border, and margin. I'll be referencing how these parts of an HTML element are affected by the three display values.
@@ -28,7 +32,7 @@
         <img src="http://www.w3.org/TR/CSS2/images/boxdim.png"/>
         <br><br>
         <strong>Inline</strong>
-        <ul id="firstlist">
+        <ul>
           <li>Does not insert line break before or after. If multiple inline elements are not seperated by any other type of elements, the inline elements will sit side by side.</li>
           <li>Takes up as much width as necessary.</li>
           <li>Does not accept top or bottom margin settings. Margins can be applied to the left or right side of the element, and padding can be applied to all four sides.</li>
@@ -51,19 +55,17 @@
           <li>Accepts both width and height elements.</li>
           <li>Elements can appear next to each other like inline elements, but retain block elements like a set width and height </li>
         </ul>
-        <br><br>
-        These are just a few of the many differences between three display property values. The differences are really much greater than my shallow overview would suggest, but hopefully some of these points will stick with you when deciding which display value to set to an element.
-      </p>
-    </div>
-    <!--<div id="footer">
-      <div id="social">
-        <a href="http://instagram.com/markreid30"><img src="http://i.imgur.com/cZJI2Qd.png"/></a>
-        <a href="https://plus.google.com/u/1/103686777172897502636/"><img src="http://i.imgur.com/iARks7i.png"/></a>
-        <a href="https://twitter.com/markreid30"><img src="http://i.imgur.com/YpR5Lya.png"/></a>
-        <a href="https://www.facebook.com/markfreid"><img src="http://i.imgur.com/FXX9TV8.png"/></a>
-        <a href="https://www.linkedin.com/profile/view?id=246149435"><img src="http://i.imgur.com/RCmaOWf.png"/></a>
-        <a href="https://github.com/mreid1130"><img src="http://i.imgur.com/0nW5VEo.png"/></a>
+        These are just a few of the many differences between three display property values. The differences are really much greater than my shallow overview would suggest, but hopefully some of these points will stick with you when deciding which display value to set to an element.</p>
       </div>
-    </div>-->
+      <div class="push"></div>
+    </div>
+    <div class="footer">
+      <a href="http://instagram.com/markreid30"><img src="http://i.imgur.com/cZJI2Qd.png"/></a>
+      <a href="https://plus.google.com/u/1/103686777172897502636/"><img src="http://i.imgur.com/iARks7i.png"/></a>
+      <a href="https://twitter.com/markreid30"><img src="http://i.imgur.com/YpR5Lya.png"/></a>
+      <a href="https://www.facebook.com/markfreid"><img src="http://i.imgur.com/FXX9TV8.png"/></a>
+      <a href="https://www.linkedin.com/profile/view?id=246149435"><img src="http://i.imgur.com/RCmaOWf.png"/></a>
+      <a href="https://github.com/mreid1130"><img src="http://i.imgur.com/0nW5VEo.png"/></a>
+    </div>
   </body>
-</html>
+</html> 
