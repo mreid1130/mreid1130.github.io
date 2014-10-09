@@ -26,31 +26,43 @@
       <div class="blogtext">
         <p>
           Enumerable methods in Ruby are ways in which we can alter data collections (things like arrays and hashes). There are dozens of enumerable methods that transform, filter, sort, and iterate over data sets, so I'm going to focus in on one transforming method's functionality and utility, the "map" method.
-          <br>
+          <br><br>
           What the map method basically does is take a set of data and transforms that data set into a brand new data set based on the arguments passed through it. I might be overcomplicating things with my explanation here, so I'll give a somewhat "real world" example of when we might use a map method:
-          <br> 
+          <br><br>
           Let's say a CFO is planning his company's yearly budget and there is a decision made that all 300 of the company employees will receive a raise to adjust for an expected inflation of 3%. The CFO wants to see how much additional money will be spent on employee salaries for the upcoming year compared to last year so that the budget can be properly allocated. Luckily, the CFO loves coding, and calculates all of the company finances using Ruby and all employee salaries are kept in a simple array called salaries.
-          <br>
+          <br><br>
           To quickly calculate the new value of each individual salary, the CFO can run a simple map method over his data set that looks like this:
+          <br><br>
           <code>
             salaries = [1000, 2000, 3000] # Pretend this is 300 elements long
+            <br>
             new_salaries = salaries.map {|salary| salary * 1.03}
           </code>
+          <br><br>
           new_salaries would return a new array with every original salary increased by 3%. We simply append .map to the end of our array's name and perform an action inside the curly brackets. Inside the vertical bars, we can call the variable anything we'd like, and this variables refers to each individual element inside of our data set. Once the variable is named, we can perform an action on that variable which will be carried out to every element of the array.
-          <br>
+          <br><br>
           I ran into the map method quite a few times during the course of DBC week 4, and every time I was struggling to differentiate map from the "each" method. The real difference is that the map method is a transforming operation. When you use the map method, the return value is a brand new data set. In our example above, the return value of new_salaries would be:
+          <br><br>
           <code>
             salaries.map {|salary| salary * 1.03}
+            <br>
             # => [1030, 2060, 3090]
           </code>
+          <br><br>
           Here is what it would have looked like if we used the each method instead:
+          <br><br>
           <code>
             salaries.each {|salary| salary * 1.03}
+            <br>
             # 1030
+            <br>
             # 2060
+            <br>
             # 3090
+            <br>
             # => [1000, 2000, 3000]
           </code>
+          <br><br>
           As you can see, the difference is that the map method returns a brand <strong>new</strong> list with the new values. The each method executes the block of code on each element, returns the value, then finally returns the <strong>original</strong> list.
         </p>
       </div>
