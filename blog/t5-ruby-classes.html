@@ -40,13 +40,13 @@
         <img src="http://i.imgur.com/FjB9Grp.png"/>
         <p>
           This is a pretty basic class; it collects and stores the starting lineup of a basketball team. It also has a built in method to print out the lineup in a somewhat formal form. This might sound simple, because it is.
-          <br>
+          <br><br>
           The first part of my class has a series of attr_accessor calls on the variables for each position in the lineup. attr_accessor gives anyone who uses this class the ability to easy read and write over the variables for each position. Say a coach was using this class to map his starting five, he could call Starters#pg to see the name of his starting point guard or set it equal to the name of another player he'd rather start at point guard.
-          <br>
+          <br><br>
           In the initialize method, I set the default values for each position to the Golden State Warriors' (my favorite team) starting lineup. I could have set those values to an empty string instead, which is probably a more functional approach. We then convert each one of those initialize instance variables to a global variable by renaming the variable with an @ in front, which tells Ruby that this variable should be accessable in any method or code in this class. This is an area I could have an argument error, such as requiring the input of a string for each variable, but I wanted to keep this example very simple.
-          <br> 
+          <br><br>
           Now that we've got the names of our starting players, I wanted to create a method to print out the starting lineup in a somewhat aesthically pleasing way, rather than doing something like returning an array or just puts each name, so I created a template for printing in the lineup method. Using the #{@variable_name} notation allows me to access those global variables and embed the values in a string.
-          <br>
+          <br><br>
           And that's all I have for now, but I look forward to playing around with this class a little more and finding ways to make it more functional. I have a few things I've already considered implementing and I'm going to put them below for my own memory's sake, but I'd love to hear ideas on things I could do to improve my class!
           <ul>
             <li>Create a method which outputs a skeleton/outline of how many minutes I want to play each player. For example, if David Lee is coming off an injury I may want to limit him to 30 minutes per game, so implement a method to adjust and print a minutes per game outline.</li>
