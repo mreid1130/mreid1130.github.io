@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      ReiDevelop - Blog
+    </title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-55717208-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>ReiDevelop - Blog</h1>
+      <h3>By Mark Reid</h3>
+      <div class="toolbar">
+        <div class="tbbutton"><a href="http://mreid1130.github.io/index.html">Home</a></div>
+        <div class="tbbutton"><a href="http://mreid1130.github.io/projects.html">Projects</a></div>
+        <div class="tbbutton"><a href="http://mreid1130.github.io/blog.html">Blog</a></div>
+        <div class="tbbutton"><a href="http://mreid1130.github.io/about.html">About</a></div>
+      </div>
+    </div>
+    <div class="body">
+      <div class="blogheader">
+        <h1>Mark's Blog</h1>
+        <h2>Ruby's Variable Scopes</h2>
+        <h3>10/22/2014</h3>
+      </div>
+      <div class="blogtext">
+        <p>
+          One of the most confusing concepts I ran into this week was when working with variable scopes in Ruby. Wrapping my mind around when to use which kind of variable was a lot tougher initially that I thought it might be. A variable in Ruby is basically a storage space for data or values in a Ruby program. Ruby has 5 different variable types: global, class, instance, local, and constant. Each variable has a different "scope", which sets a boundary for how those variables can be accessed.
+          <br><br>
+          Global Variables
+          <br><br>
+          Global variables have the most accessible variable scope. Global variables are created by naming a variable beginning with a $ symbol. If I was writing an application in Ruby that had multiple files and wanted a variable that I could access in any file, I could create a variable called $global. The $ sign is a prompt to Ruby signifying that the $global variable has a global scope and will be made accessible anywhere in a Ruby script.
+          <br><br>
+          The fact that global variables are so easily accessible presents a huge problem in using them for developers. Intuitively some people might think it's a great thing to have unrestricted access to all the variables in a program, but that line of thinking can lead to code with errors that are extremely hard to pin down. When programs begin to grow and overuse of global variables occurs, there is a much higher chance for a developer to accidentally write over a global variable and destabilize their code. And because global variables were being overused, it's really hard to pin down where the bug occurs because that global variable could have been altered from any number of locations.
+          <br><br>
+          Class and Instance Variables
+          <br><br>
+          As I wrote about a little bit in one of my previous blogs, everything in Ruby is a part of a "class". And each class object can have a set of variables located inside. A class variable is a variable that has uniform value across every single instance of that class. If I was a teacher and wanted to create a class that accepts an array of student grades in order to calculates a final grade and I wanted to implement a curve where I gave every student 5 points, I could create a class variable called @@curve and set it equal to 5. The @@ tells Ruby that this variable has a class variable scope and will be accessible by every instance of my class that is created. So then when I calculate a student's final grade, I can add the @@curve variable with the same value to each students score in each instance of the class.
+          <br><br>
+          An instance variable is initialized with a single @ at the beginning of the variable name. Instance variables differ from class variables in that they are unique and accessible within every instance of a class. Continuing with the gradebook example, I would likely want to create a variable called @raw_grade. That variable will be present in every instance of my class but every @raw_grade value has the potential to be unique based on the scores of the students. When I calculate the final grade of my students, I can create a method which takes the calculated @raw_grade and adds @@curve to give me the student's final grade.
+          <br><br>
+          Local Variables
+          <br><br>
+          Local variables are probably the most common type of variable (I'll admit I did zero fact checking there). A local variable has no special signal to Ruby to signal it has a local scope. Local variables are typicalled named with lowercase letters and occasionally an underscore. They are the vanilla ice cream of Ruby variables. A local scope stretches as far as the limits of the object they are located in. Say I'm just beginning Ruby and I want to create a method which returns the sum of a given array, and let's call that variable array. Inside my method I would write, "x = array.inject(:+)". The 'x' variable would contain the sum value of the array. Don't worry about the actual functionality of the code if you're unfamiliar with Ruby, the point is I am saving the sum into a local variable called x. I can run this method over and over again and x will contain a new value depending on the input array. If you run the method and try calling the 'x' variable outside of the method, Ruby won't recognize that variable as being an existing variable. Local variables live exclusively inside of methods, classes, and modules and can't be called anywhere else in Ruby.
+          <br><br>
+          Constants
+          <br><br>
+          The final variable type in Ruby is the CONSTANT variable (they are signaled by all uppercase variable names). Technically, these variables can be changed, but that goes against their conventional usage and their name. Constant variables are expected to stay at a constant value, which creates a small difference between constant, class, and global variables, which aren't tied to a constant value, you can change a class or global variable. In using our gradebook example again, if I decided that a 5 point grade bump wasn't fair enough, so I could change that value and it would be carried out to every instance of the class. If I wanted to include a CONSTANT value, I could create a variable called PASS and set it equal to 60. That will always be the cutoff for pass/fail in my class, and there would be no reason for me to ever change that value. I would be able to use the PASS variable across all instances of my class to compare against each student score to see whether or not they would pass or fail the class.
+          <br><br>
+        </p>
+      </div>
+      <div class="push"></div>
+    </div>
+    <div class="footer">
+      <a href="http://instagram.com/markreid30"><img src="http://i.imgur.com/cZJI2Qd.png"/></a>
+      <a href="https://plus.google.com/u/1/103686777172897502636/"><img src="http://i.imgur.com/iARks7i.png"/></a>
+      <a href="https://twitter.com/markreid30"><img src="http://i.imgur.com/YpR5Lya.png"/></a>
+      <a href="https://www.facebook.com/markfreid"><img src="http://i.imgur.com/FXX9TV8.png"/></a>
+      <a href="https://www.linkedin.com/profile/view?id=246149435"><img src="http://i.imgur.com/RCmaOWf.png"/></a>
+      <a href="https://github.com/mreid1130"><img src="http://i.imgur.com/0nW5VEo.png"/></a>
+    </div>
+  </body>
+</html> 
