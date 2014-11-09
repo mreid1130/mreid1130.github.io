@@ -59,6 +59,31 @@ html, body {
   margin: 0 auto -4em;
   background-image: url("http://4.bp.blogspot.com/-0Ze7FvNbzC4/UZET50mNaiI/AAAAAAAAB3Q/KKcybJcpPDE/s1600/SFBnw.jpg");
 }
+
+.cheatsheet{
+  border:2px solid;
+  float:right;
+  height:3em;
+  width:7em;
+}
+
+.cheatsheet p{
+  text-align: center;
+  color:white;
+  font-size: 1.4em;
+}
+
+.cheatsheet a{
+  color:white;
+  text-decoration:none;
+}
+
+.cheatsheet a:hover{
+  color:white;
+  text-decoration:none;
+  text-shadow:2px 2px 2px black
+}
+
   	  
 .footer {
   float:right;
