@@ -58,7 +58,7 @@ h1 {
   height: auto !important;
   height: 100%;
   margin: 0 auto -4em;
-/*  background-image: url("http://4.bp.blogspot.com/-0Ze7FvNbzC4/UZET50mNaiI/AAAAAAAAB3Q/KKcybJcpPDE/s1600/SFBnw.jpg");*/
+  background-image: url("http://4.bp.blogspot.com/-0Ze7FvNbzC4/UZET50mNaiI/AAAAAAAAB3Q/KKcybJcpPDE/s1600/SFBnw.jpg");
   background-repeat:no-repeat;
 }
 
@@ -89,11 +89,43 @@ h1 {
 .bloglist {
   text-align:center;
   font-family:Verdana;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bloglist p{
+
+}
+
+.bloglist a{
+  color:red;
+  font-weight:bold;
+}
+
+.bloglist a:hover{
+  text-shadow: 2px 2px white;
+  font-weight:bold;
+  color:red;
+}
+
+.bloglist a:visited{
+  color:red;
+  font-weight:bold;
+}
+
+h2 {
+  text-align:right;
+  margin-right: 9em;
+}
+
+.aboutbody {
+  margin-right: 1em;
 }
 
 .footer {
   float:right;
   height:4em;
+  margin-top:6em;
 }
       
 .push {  
