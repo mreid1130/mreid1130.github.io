@@ -8,6 +8,8 @@ h1 {
   padding:0;
   margin:0;
   opacity:1;
+  padding-top:.5em;
+  padding-bottom: .5em;
 }
 
 .header {
@@ -43,20 +45,20 @@ h1 {
   padding-left:3em;
   padding-right:3em;
 }
-      
+  	  
 .tbbutton a:hover {
   background-color:black;
   text-shadow:none;
   color:#A8A8A8;
 }
-      
+  	  
 .body {
   display:block;
   min-height: 100%;
   height: auto !important;
   height: 100%;
   margin: 0 auto -4em;
-  background-image: url("http://4.bp.blogspot.com/-0Ze7FvNbzC4/UZET50mNaiI/AAAAAAAAB3Q/KKcybJcpPDE/s1600/SFBnw.jpg");
+/*  background-image: url("http://4.bp.blogspot.com/-0Ze7FvNbzC4/UZET50mNaiI/AAAAAAAAB3Q/KKcybJcpPDE/s1600/SFBnw.jpg");*/
   background-repeat:no-repeat;
 }
 
@@ -78,11 +80,22 @@ h1 {
   font-size: 2em;
 }
 
+.profilepic {
+  float:left;
+  margin-right:3em;
+  border:black 3px solid;
+}
+
+.bloglist {
+  text-align:center;
+  font-family:Verdana;
+}
+
 .footer {
   float:right;
   height:4em;
 }
-      
+  	  
 .push {  
-  height:50em;
+  height:4em;
 }

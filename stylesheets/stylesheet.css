@@ -1,28 +1,23 @@
 html, body {
   height:100%;
+  background-color: #D0D0D0;
 }
-  	  
+
+h1 {
+  text-align: center;
+  padding:0;
+  margin:0;
+  opacity:1;
+  padding-top:.5em;
+  padding-bottom: .5em;
+}
+
 .header {
-  margin-top:-2em;
-  display:block;
-  text-align:center;
-  background-image: url(http://i.huffpost.com/gen/1532020/thumbs/o-CANDLESTICK-facebook.jpg);
-  background-repeat:no-repeat;
-  background-position:50% 60%;
   background-color:black;
-}
-  	  
-.header h1 {
-  margin-top:1em;
   color:white;
-  font-family:Verdana;
-  text-shadow:2px 2px 2px black;
-}
-  	  
-.header h3 {
-  color:white;
-  font-family:Verdana;
-  text-shadow:2px 2px 2px black;
+  margin:0;
+  padding: 0;
+  opacity:.5;
 }
 
 .toolbar {
@@ -31,57 +26,76 @@ html, body {
   font-weight:bold;
   margin-left:auto;
   margin-right:auto;
+  background-color:black;
+  opacity:0.5;
+}
+
+.toolbar h1{
+  float:left;
 }
 
 .tbbutton {
   display: inline-block;
+  opacity: 1;
 }
 
 .tbbutton a {
-  color:black;
-  text-shadow:1px 1px 1px white;
+  color:white;
   text-decoration:none;
   padding-left:3em;
   padding-right:3em;
 }
-  	  
+      
 .tbbutton a:hover {
   background-color:black;
   text-shadow:none;
   color:#A8A8A8;
 }
-  	  
+      
 .body {
   display:block;
   min-height: 100%;
   height: auto !important;
   height: 100%;
   margin: 0 auto -4em;
+/*  background-image: url("http://4.bp.blogspot.com/-0Ze7FvNbzC4/UZET50mNaiI/AAAAAAAAB3Q/KKcybJcpPDE/s1600/SFBnw.jpg");*/
+  background-repeat:no-repeat;
 }
-  	  
+
+.cheatsheet {
+  float:right;
+  margin-right:1em;
+  margin-top: 25em;
+}
+
+.cheatsheet a {
+  text-decoration: none;
+  color:black;
+  font-size: 2em;
+}
+
+.cheatsheet a:visited {
+  text-decoration: none;
+  color:black;
+  font-size: 2em;
+}
+
+.profilepic {
+  float:left;
+  margin-right:3em;
+  border:black 3px solid;
+}
+
+.bloglist {
+  text-align:center;
+  font-family:Verdana;
+}
+
 .footer {
   float:right;
   height:4em;
 }
-  	  
-.push {
+      
+.push {  
   height:4em;
-}
-
-.bloglist {
-	text-align:center;
-	font-family:Verdana;
-}
-
-.profilepic {
-	float:left;
-	margin-right:3em;
-}
-
-.body {
-	font-family:Verdana;
-}
-
-.body h2{
-	text-align:center;
 }

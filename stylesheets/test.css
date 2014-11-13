@@ -79,6 +79,11 @@ h1 {
   font-size: 2em;
 }
 
+.profilepic {
+  float:left;
+  margin-right:3em;
+}
+
 .footer {
   float:right;
   height:4em;
