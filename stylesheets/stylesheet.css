@@ -118,6 +118,36 @@ h2 {
   margin-right: 9em;
 }
 
+#projecthead {
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.projects a{
+  text-decoration: none;
+  color:red;
+  font-weight:bold;
+}
+
+.projects a:hover{
+  text-shadow: 2px 2px white;
+  font-weight:bold;
+  color:red;
+}
+
+#projectlist {
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.projects{
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
+}
+
 .aboutbody {
   margin-right: 1em;
 }
