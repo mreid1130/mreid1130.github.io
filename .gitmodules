@@ -1,6 +1,0 @@
-[submodule "fallaway"]
-	path = fallaway
-	url = https://github.com/mreid1130/fallaway.git
-[submodule "grow_game"]
-	path = grow_game
-	url = https://github.com/mreid1130/grow_game.git
