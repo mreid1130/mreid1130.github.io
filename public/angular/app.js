@@ -6,19 +6,19 @@ angular.module('personalSite', ['navController',
 
   .state('about', {
     url           : "/about",
-    templateUrl   : "angular/templates/about.html",
+    templateUrl   : "./public/angular/templates/about.html",
     controller    : 'NavCtrl'
   })
 
   .state('portfolio', {
     url           : "/",
-    templateUrl   : "angular/templates/portfolio.html",
+    templateUrl   : "./public/angular/templates/portfolio.html",
     controller    : 'NavCtrl'
   })
 
   .state('blog', {
     url           : "/blog",
-    templateUrl   : "angular/templates/blog.html",
+    templateUrl   : "./public/angular/templates/blog.html",
     controller    : 'NavCtrl'
   })
 
