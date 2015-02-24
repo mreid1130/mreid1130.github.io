@@ -74,6 +74,8 @@
 	vertical-align: top;
 	position: relative;
 	display: inline-block;
+	height: 30em;
+	border-bottom: 1px #E1E1E1 solid; 
 }
 
 .logo {
@@ -98,6 +100,7 @@
 		width: 90%;
 		margin-left: 5%;
 		margin-right: 5%;
+		height: 25em;
 	}
 }
 
