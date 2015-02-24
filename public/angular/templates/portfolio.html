@@ -3,7 +3,7 @@
 	<div class="projects" ng-controller="ProjectCtrl">
 		<div class="project" ng-repeat="project in projects">
 			<h2>{{project.title}}</h2>
-			<a href="{{project.hosted_url}}"><img src="{{project.screencap_url}}"></a>
+			<a href="{{project.hosted_url}}"><img class="screencap" src="{{project.screencap_url}}"></a>
 			<p>{{project.description}}</p>
 			<a href='{{project.github_url}}'>GitHub Repository</a>
 		</div>
