@@ -179,6 +179,9 @@ a .screencap:hover {
 .icons a.googleplus { 
 	background: url(../img/social-icons/googleplus1.png) left top no-repeat; 
 }
+.icons a.instagram { 
+	background: url(../img/social-icons/instagram1.png) left top no-repeat;
+}
 .icons a:hover { 
 	background-position: left -34px; 
 }
