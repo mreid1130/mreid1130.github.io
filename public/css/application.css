@@ -155,11 +155,12 @@ a .screencap:hover {
 
 .blogpage {
 	height: 100%;
+	position: relative;
 }
 
 .blogcontainer {
 	display: block;
-	position: absolute;
+	position: relative;
 	height: 100%;
 }
 .blogcontent {
