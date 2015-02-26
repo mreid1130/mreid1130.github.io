@@ -153,6 +153,11 @@ a .screencap:hover {
 	box-shadow: 4px 4px 3px #A81010;
 }
 
+.blogpage {
+	height: 100%;
+	width: 100%;
+}
+
 .blogcontainer {
 	display: block;
 	position: absolute;
@@ -162,7 +167,6 @@ a .screencap:hover {
 .blogcontent {
 	float:left;
 	display: inline-block;
-	position: absolute;
 	width: 55%;
 	margin:0;
 	padding:0;
@@ -170,10 +174,10 @@ a .screencap:hover {
 .blogsidebar {
 	float:right;
 	display: inline-block;
-	position: absolute;
 	width: 17%;
 	margin: 0;
 	padding: 0;
+	border-left: 1px #E1E1E1 solid;
 }
 
 .icons a {
