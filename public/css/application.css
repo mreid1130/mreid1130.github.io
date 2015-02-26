@@ -164,6 +164,7 @@ a .screencap:hover {
 	height: 100%;
 }
 .blogcontent {
+	vertical-align: top;
 	display: inline-block;
 	position: relative;
 	width: 70%;
@@ -172,6 +173,7 @@ a .screencap:hover {
 	height:100%;
 }
 .blogsidebar {
+	vertical-align: top;
 	display: inline-block;
 	height:100%;
 	width: 25%;
