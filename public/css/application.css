@@ -165,16 +165,16 @@ a .screencap:hover {
 	width:100%;
 }
 .blogcontent {
-	float:left;
 	display: inline-block;
 	width: 55%;
 	margin:0;
 	padding:0;
+	height:100%;
 }
 .blogsidebar {
-	float:right;
 	display: inline-block;
 	width: 17%;
+	height:100%;
 	margin: 0;
 	padding: 0;
 	border-left: 1px #E1E1E1 solid;
