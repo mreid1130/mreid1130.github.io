@@ -173,6 +173,7 @@ a .screencap:hover {
 .blogsidebar {
 	display: inline-block;
 	height:100%;
+	width: 17%;
 	position: relative;
 	margin: 0;
 	padding: 0;
