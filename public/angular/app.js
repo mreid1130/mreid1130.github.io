@@ -1,5 +1,6 @@
 angular.module('personalSite', ['navController',
                                 'projectController',
+                                'blogController',
                                 'ui.router'])
 .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
   $stateProvider
