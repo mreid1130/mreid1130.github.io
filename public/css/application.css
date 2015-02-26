@@ -155,7 +155,6 @@ a .screencap:hover {
 
 .blogpage {
 	height: 100%;
-	width: 100%;
 }
 
 .blogcontainer {
@@ -166,7 +165,7 @@ a .screencap:hover {
 }
 .blogcontent {
 	display: inline-block;
-	position: absolute;
+	position: relative;
 	width: 55%;
 	margin:0;
 	padding:0;
@@ -176,7 +175,7 @@ a .screencap:hover {
 	display: inline-block;
 	width: 17%;
 	height:100%;
-	position: absolute;
+	position: relative;
 	margin: 0;
 	padding: 0;
 	border-left: 1px #E1E1E1 solid;
