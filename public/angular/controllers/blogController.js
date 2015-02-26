@@ -7,8 +7,7 @@ angular.module('blogController', [])
 						}]
 
 	$scope.selectBlogPost = function(blogpath){
-		// $scope.blogPost = blogpath
-		console.log('working: ', blogpath)
+		$scope.blogPostPath = blogpath
 	}
 
 }])

@@ -2,7 +2,7 @@
 	<h1 class="pagehead">Blog</h1>
 	<div class="blogcontainer" ng-controller="BlogCtrl">
 		<div class="blogcontent">
-			<p>1 11111111 111111111 1111111 1111111 11111 111 111 1111  111111</p>
+			<div ng-include="blogPostPath"></div>
 		</div>
 		<div class="blogsidebar">
 			<ul ng-repeat="blog in blogInfo">
