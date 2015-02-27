@@ -30,7 +30,7 @@ angular.module('blogController', [])
 						},
 						{
 							path: './blog/c1-chefs-kitchen.html',
-							title: 'Kitchen vs. Restaurant'
+							title: 'Kitchen vs. Restaurant',
 							date: 'Sep. 17, 2014'
 						}
 					  ]
