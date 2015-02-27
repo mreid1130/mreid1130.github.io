@@ -25,7 +25,7 @@ angular.module('blogController', [])
 						},
 						{
 							path: './blog/t2-css-design.html',
-							title: 'Inline, Blocks, and Inline-block',
+							title: 'Inlines, Blocks, and Inline-blocks',
 							date: 'Sep. 24, 2014'
 						},
 						{
