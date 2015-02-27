@@ -14,6 +14,11 @@ angular.module('blogController', [])
 							date: 'Nov. 14, 2014'
 						},
 						{
+							path: './blog/c3-tech-issues.html',
+							title: 'Underrepresentation in the Tech Industry',
+							date: 'Oct. 8, 2014'
+						}
+						{
 							path: './blog/c2-thinking-style.html',
 							title: "My Learning Style and DBC",
 							date: 'Oct. 5, 2014'
