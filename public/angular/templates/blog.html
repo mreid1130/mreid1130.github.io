@@ -5,8 +5,8 @@
 			<div ng-include="blogPostPath"></div>
 		</div>
 		<div class="blogsidebar">
-			<ul ng-repeat="blog in blogInfo">
-				<li><a href class="bloglink" ng-click="selectBlogPost(blog.path)">{{blog.title}}</a> - {{blog.date}}</li>
+			<ul ng-repeat="post in allBlogPosts">
+				<li><a href class="bloglink" ng-click="selectBlogPost(post.path)">{{post.title}}</a> - {{post.date}}</li>
 			</ul>
 		</div>
 	</div>
