@@ -174,6 +174,23 @@ a .screencap:hover {
 	font-family: 'Questrial';
 	color: #8A8A8A;
 }
+
+.blogcontent a {
+	color: #474747;
+	text-decoration: none;
+}
+
+.blogcontent a:visited {
+	color: #474747;
+	text-decoration: none;
+}
+
+.blogcontent a:hover {
+	color: #474747;
+	text-decoration: none;
+	border-bottom: #A81010 solid 1px
+}
+
 .blogsidebar {
 	vertical-align: top;
 	display: inline-block;
