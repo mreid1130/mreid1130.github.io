@@ -187,6 +187,15 @@ a .screencap:hover {
 	color: #8A8A8A;
 }
 
+.bloglink {
+	text-decoration: none;
+}
+
+.bloglink:hover {
+	color: #474747;
+	border-bottom: #A81010 solid 2px
+}
+
 .icons a {
 	float: right;
     display: inline-block;

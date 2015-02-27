@@ -21,7 +21,7 @@ angular.module('projectController', [])
 			description: "Upstarter gives job hunters investor-grade insight into the heated startup market, straight from a convenient hybrid mobile app. Drawing on over 90,000 startups, Upstarter rank orders top companies by a 'Momentum Score'. Factoring in fundraising history, expenditures and employee count, the Momentum Score is a startup's percentile ranking compared to similar companies. Built using the MEAN stack and the Ionic framework.",
 			github_url: 'https://github.com/jgerminario/upstarter',
 			screencap_url: "http://i.imgur.com/fxLDBrY.png",
-			hosted_url: "#"
+			hosted_url: "http://upstarter-client.herokuapp.com"
 		},
 		{
 			title: 'SoggyNachos',

@@ -6,7 +6,7 @@
 		</div>
 		<div class="blogsidebar">
 			<ul ng-repeat="blog in blogInfo">
-				<li><a href ng-click="selectBlogPost(blog.path)">{{blog.title}}</a> - {{blog.date}}</li>
+				<li><a href class="bloglink" ng-click="selectBlogPost(blog.path)">{{blog.title}}</a> - {{blog.date}}</li>
 			</ul>
 		</div>
 	</div>
