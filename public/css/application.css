@@ -162,7 +162,9 @@ a .screencap:hover {
 	display: block;
 	position: relative;
 	height: 100%;
-	margin-bottom: 3em;
+	margin-bottom: 2em;
+	padding-bottom: 1em;
+	border-bottom: 1px #E1E1E1 solid; 
 }
 .blogcontent {
 	vertical-align: top;
