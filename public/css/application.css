@@ -178,17 +178,17 @@
   line-height: 150%;
 }
 
-a {
+p a {
   color: #474747;
   text-decoration: none;
 }
 
-a:visited {
+p a:visited {
   color: #474747;
   text-decoration: none;
 }
 
-a:hover {
+p a:hover {
   color: #474747;
   text-decoration: none;
   border-bottom: #A81010 solid 1px
