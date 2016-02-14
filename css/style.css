@@ -153,6 +153,7 @@ a:visited {
   margin-left: 50%;
   transform: translateX(-50%);
   padding-top: 6em;
+  display: inline-block;
 }
 
 .body-container .portfolio-tiles .tile {
@@ -163,6 +164,35 @@ a:visited {
   height: 20em;
   padding-left: 10px;
   padding-right: 10px;
-  border: 1px black solid;
+  border: 1px solid black;
   margin: 5px 5px 5px 5px;
+  vertical-align: top
+}
+
+.body-container .portfolio-tiles .tile .project-title {
+  padding-top: 2em;
+}
+
+.body-container .portfolio-tiles .tile .project-description {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  height: 50%;
+}
+
+.body-container .portfolio-tiles .tile .project-description p {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin-top: 0;
+}
+
+.body-container .portfolio-tiles .tile .title-bar {
+  background-color: #2f353c;
+  border: 0 none;
+  height: 12px;
+  width: 64px;
+  display: block;
+  margin-top: 10px;
 }
