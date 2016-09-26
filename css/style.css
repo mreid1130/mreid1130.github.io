@@ -26,7 +26,6 @@ a:hover {
 .nav {
     position: fixed;
     height: 120px;
-    width: 100%;
     padding-top: 40px;
     background-color: #F1F1EF;
     z-index: 10;
@@ -34,7 +33,7 @@ a:hover {
 
 .name {
     position: absolute;
-    left: 70px;
+    left: 30px;
     top: 60px;
     position: absolute;
     letter-spacing: 1px;
@@ -49,7 +48,7 @@ a:hover {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    right: 70px;
+    right: 90px;
     cursor: pointer;
 }
 
@@ -82,11 +81,33 @@ a:hover {
 
 .about .body .picture {
     position: relative;
-    height: 1000px;
-    width: 30%;
     margin-right: 5%;
     float: left;
     z-index: 9;
+}
+
+.about .body .social {
+    width: 100%;
+    margin: 20px 0 0 0;
+    padding: 0;
+    list-style-type: none;
+    z-index: 2;
+}
+
+.about .body .social li {
+    display: inline-block;
+}
+
+.about .body .social li a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 23px;
+}
+
+.about .body .social li i {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 23px;
 }
 
 .about .body .picture img {
@@ -96,8 +117,8 @@ a:hover {
 }
 
 .about .body .content {
+    margin-bottom: 60px;
     position: relative;
-    margin: 60px auto 0 auto;
 }
 
 .about .body .content p {
@@ -126,7 +147,7 @@ a:hover {
     font-size: 12px;
     font-weight: 400;
     display: list-item;
-    margin: 12px;
+    margin: 12px 0 0 0;
 }
 
 .about .body .content ul li:first-child {
