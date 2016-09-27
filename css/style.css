@@ -56,6 +56,10 @@ a, a:visited, a:hover {
   color: #222222;
 }
 
+.right li a.active {
+  color: red;
+}
+
 .right li a:hover {
   color: red;
 }
