@@ -23,6 +23,7 @@ a, a:visited, a:hover {
 .nav {
   height: 120px;
   padding-top: 40px;
+  padding-bottom: 150px;
   background-color: #F1F1EF;
   z-index: 10;
 }
