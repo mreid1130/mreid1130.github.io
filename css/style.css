@@ -41,6 +41,25 @@ a:hover {
   display: inline-block;
 }
 
+#logo {
+  position: absolute;
+  left: 50%;
+  margin-left: -3rem;
+  cursor: pointer;
+}
+
+#logo img {
+  vertical-align: middle;
+  border: 0;
+  opacity: 1;
+  height: 80px;
+  width: 80px;
+}
+
+#logo img:hover {
+  opacity: .7;
+}
+
 .right {
   top: 55px;
   margin: 0;
