@@ -314,6 +314,10 @@ a:hover {
   flex-direction: column
 }
 
+.blog-list-sidebar .active {
+  background-color: rgba(186, 186, 186, .2);
+}
+
 .blog-list-sidebar .blog-list-item:hover {
   background-color: rgba(186, 186, 186, .2);
   cursor: pointer;
@@ -328,8 +332,8 @@ a:hover {
 
 .blog-body {
   width: 100%;
-  height: auto;
   background: #fff;
+  padding-top: 2em;
   margin-bottom: 6rem;
 }
 
@@ -337,5 +341,9 @@ a:hover {
   color: #616161;
   line-height: 1.75;
   font-size: 19px;
-  padding: 2rem 3rem 2rem 3rem;
+  padding: 1rem 3rem 1rem 3rem;
+}
+
+code {
+  border: none;
 }
