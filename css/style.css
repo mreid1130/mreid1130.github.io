@@ -333,7 +333,8 @@ a:hover {
 .blog-body {
   width: 100%;
   background: #fff;
-  padding-top: 2em;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   margin-bottom: 6rem;
 }
 

@@ -37,7 +37,7 @@
                 <p class="date pull-right">Oct. 2, 2016</p>
               </div>
               <h1 class="blog-title">Web Scraping with Node</h1>
-              <p class="sub-title">This tutorial will cover scraping both a static and dynamic content site utilizing Node, Cheerio, and PhantomJS.</p>
+              <p class="sub-title">A tutorial on scraping a static and dynamic site utilizing Node, Cheerio, and PhantomJS.</p>
               <div class="bottom">
                 <p>Mark Reid</p>
               </div>
@@ -47,7 +47,36 @@
         <div class="row">
           <div class="small-12 columns">
             <div class="blog-body">
-              <p>Testing Testing fwe cew Tfw esting Testingfwef Testing Testing Te sting Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Tefrwefsting Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testinfrewfrewfrew g Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing</p>
+              <p>Building web scrapers has been something that's been asked of me quite often at work, and I'm hoping this tutorial will help teach a few simple ways to practice grabbing data from your favorite sites.</p>
+              <p>In this tutorial, I'll be using Node packages request and cheerio to scrape static pages and PhantomJS and cheerio to scrape dynamic pages. I'll also be using the async library to help manage asyncronous requests.</p>
+              <p>Cheerio is a basic server-side implementation of jQuery. That means that given a DOM in the form of a string, cheerio can parse that string and we can perform jQuery like operations to collect data from the DOM.</p>
+              <p>PhantomJS is a library which will allow us to make a request to a given URL and execute JavaScript on the page. This can include simulating user actions such as scrolling, clicking, key-pressing, etc. This is a powerful set of tools to have when doing automated browser testing or in our case, scraping data from a page. With the rising popularity of SPAs, web scraping has become more difficult for sites built with certain frameworks and those that execute JavaScript to inject content dynamically.</p>
+              <p>First, we'll start off scraping a static page and grabbing the title element from the DOM:</p>
+              <pre class="language-javascript line-numbers">
+                <code class="language-javascript">
+                  var cheerio = require('cheerio');
+                  var request = require('request');
+                  var async = require('async');
+
+                  async.waterfall([
+                    (callback) => {
+                      request('https://google.com', callback);
+                    }, (res, body, callback) => {
+                      var $ = cheerio.load(body);
+
+                      var title = $('title');
+
+                      callback(null, title);
+                    }
+                  ], (err, title) => {
+                    if (err) {
+                      console.log(err.stack);
+                    }
+                    console.log('Page title is:', title);
+                  });
+                </code>
+              </pre>
+              <p>If you run the code in your local node environment with the installed packages, you should see the following logline: "Page title is: Google"</p>
             </div>
           </div>
         </div>
